@@ -183,7 +183,7 @@ body {
   right: 5px;
   font-size: 14px;
 }
-#productModal .modal-footer {
+#productModal .modal-footer, #viewOrderModal .modal-footer {
   position: absolute;
   width: 100%;
   bottom: -60px;
@@ -217,7 +217,9 @@ body {
   border-radius: 15px;
   align-items: center;
 }
-
+#viewOrderModal .order-list {
+  border-bottom: 1px dashed lightgray;
+}
 #viewOrderModal .order-list .order-list-item {
   display: flex;
   gap: 7px;
