@@ -1,0 +1,241 @@
+body {
+  background-color: #000;
+}
+.narrowed {
+  display: none;
+  /* position: -webkit-sticky; */
+  /* position: sticky;
+  z-index: 999; */
+}
+.narrowed h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.narrowed p {
+  color: #e8bf57;
+  font-size: 14px;
+}
+.scrolled .narrowed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scrolled .hero {
+  display: none;
+}
+.scrolled .categories-wrapper {
+  position: fixed;
+  background-color: #000;
+  z-index: 999;
+  left: 0;
+  right: 0;
+}
+.scrolled .scrollable-tabs-container {
+  padding: 0;
+}
+.scrolled #myTabContent {
+  padding-top: 220px;
+}
+#myTabContent {
+  padding-bottom: 100px;
+}
+
+.hero {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+.hero-img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+
+.scrollable-tabs-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-block: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Hide scrollbar in Firefox */
+}
+.scrollable-tabs-container::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar in Chrome and Safari */
+}
+.nav.nav-tabs {
+  flex-wrap: nowrap;
+  border: none;
+}
+.nav-tabs .nav-link {
+  color: #fff;
+  border: none;
+  border-radius: 10px !important;
+  padding: 5px 20px;
+}
+.nav-tabs .nav-link.active {
+  background: #e8bf57;
+  color: #fff;
+}
+.food-item {
+  background: #fff;
+  padding: 6px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.food-item-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgb(153 131 131 / 80%);
+  object-fit: cover;
+}
+.cart-quantity {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+.product-modal-trigger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: start;
+}
+.item-name {
+  color: #fff;
+  font-size: 16px;
+}
+.item-price {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.footer {
+  background: #9a4418;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.footer .help {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  background: #c78260;
+}
+
+.view-order {
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgb(210, 210, 112);
+  font-size: 15px;
+}
+.view-order .cart-item-quantity {
+  background-color: #000;
+  color: #fff;
+  padding-inline: 5px;
+}
+
+/* ============== */
+/* Product Modal */
+/* ============== */
+#productModal .food-detail {
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: center;
+}
+#productModal .food-detail h3 {
+  font-size: 18px;
+}
+#productModal .food-item {
+  background-color: #f2f3f9;
+  padding: 10px;
+}
+#productModal .food-item .food-item-img {
+  width: 200px;
+  height: 200px;
+}
+#productModal .food-item .price {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 14px;
+}
+#productModal .modal-footer {
+  position: absolute;
+  width: 100%;
+  bottom: -60px;
+  justify-content: center;
+}
+.options h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.item-counter {
+  background-color: lightgray;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.item-counter button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
+.add-product-btn {
+  border: none;
+  background: rgb(210, 210, 112);
+  display: flex;
+  padding: 10px;
+  gap: 40px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+#viewOrderModal .order-list .order-list-item {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#viewOrderModal .order-list .order-list-item h2,
+#viewOrderModal .order-list .order-list-item h3 {
+  font-size: 16px;
+}
+#viewOrderModal .order-list .order-list-item p {
+  font-size: 12px;
+}
+#viewOrderModal .order-list .order-list-item .quantity {
+  opacity: 0.9;
+}
+#viewOrderModal .order-list .order-list-item .list-img {
+  max-width: 80px;
+  background-color: lightgray;
+  position: relative;
+}

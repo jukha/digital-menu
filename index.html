@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="container-fluid hero">
+      <div class="expanded">
+        <div class="hero-img">
+          <img
+            src="img/bg-img.jpg"
+            class="img-fluid h-100 w-100 object-fit-cover"
+          />
+        </div>
+        <div>
+          <h3>LOGO</h3>
+          <h1 class="text-uppercase">Restaurant Name</h1>
+          <p>Tag Line</p>
+        </div>
+      </div>
+    </section>
+    <section class="categories-wrapper px-2">
+      <div class="narrowed text-white">
+        <h2 class="text-uppercase">Restaurant Name</h2>
+        <p>
+          <span>Mojo@</span>
+          <br />
+          <span>Table #3</span>
+        </p>
+      </div>
+      <div class="scrollable-tabs-container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              Breakfast
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
+            >
+              Lunch
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              Dinner
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#disabled-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="disabled-tab-pane"
+              aria-selected="false"
+            >
+              Dessert
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="appetizer-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#appetizer-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="appetizer-tab-pane"
+              aria-selected="false"
+            >
+              Appetizer
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="beverage-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#beverage-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="beverage-tab-pane"
+              aria-selected="false"
+            >
+              Beverage
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="snack-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#snack-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="snack-tab-pane"
+              aria-selected="false"
+            >
+              Snack
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home-tab-pane"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <button
+                type="button"
+                class="product-modal-trigger-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </button>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="contact-tab-pane"
+        role="tabpanel"
+        aria-labelledby="contact-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="disabled-tab-pane"
+        role="tabpanel"
+        aria-labelledby="disabled-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="appetizer-tab-pane"
+        role="tabpanel"
+        aria-labelledby="appetizer-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="beverage-tab-pane"
+        role="tabpanel"
+        aria-labelledby="beverage-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="snack-tab-pane"
+        role="tabpanel"
+        aria-labelledby="snack-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmons with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <div class="food-item">
+                  <img src="/img/item.png" class="food-item-img" />
+                  <span class="cart-quantity">3</span>
+                </div>
+                <h3 class="item-name">Salmon with gravy and sides</h3>
+                <p class="item-price">
+                  <span class="currency">Php</span>
+                  <span class="amount">250.00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer d-flex justify-content-between">
+      <div class="help">
+        <i class="fa-solid fa-question"></i>
+        <span>Ask for help</span>
+      </div>
+      <button
+        class="view-order"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#viewOrderModal"
+      >
+        <span class="cart-item-quantity">3</span>
+        <span class="text-uppercase">View order</span>
+        <span class="total-price">2,400.00</span>
+      </button>
+    </footer>
+    <!-- ================== -->
+    <!-- Product Modal      -->
+    <!-- ================== -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-2 border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="food-detail">
+              <div class="food-item">
+                <img src="/img/item.png" class="food-item-img" />
+                <span class="price">Php 250.00</span>
+              </div>
+              <h3>Salmon with gravy and sides</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="options">
+              <h4>Options</h4>
+              <div class="d-flex align-content-center gap-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Default checkbox
+                </label>
+                <span class="ms-auto">+43.55</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer align-items-stretch border-0">
+            <div class="item-counter">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <button class="add-product-btn">
+              Add
+              <span>$25.98</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================== -->
+    <!-- View Order Modal   -->
+    <!-- ================== -->
+
+    <div
+      class="modal fade"
+      id="viewOrderModal"
+      tabindex="-1"
+      aria-labelledby="viewOrderModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title text-uppercase fs-5"
+              id="viewOrderModalLabel"
+            >
+              Order
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="order-list ps-0">
+              <li class="order-list-item">
+                <div class="list-img">
+                  <img src="/img/item.png" class="img-fluid" />
+                </div>
+                <span class="quantity">1x</span>
+                <div>
+                  <h3>Salmon with gravy and sides</h3>
+                  <p>
+                    <span> Extra sauce </span>
+                    <span>extra meat</span>
+                  </p>
+                </div>
+                <h2>43.50</h2>
+              </li>
+              <li class="order-list-item">
+                <div class="list-img">
+                  <img src="/img/item.png" class="img-fluid" />
+                </div>
+                <span class="quantity">1x</span>
+                <div>
+                  <h3>Salmon with gravy and sides</h3>
+                  <p>
+                    <span> Extra sauce </span>
+                    <span>extra meat</span>
+                  </p>
+                </div>
+                <h2>43.50</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
