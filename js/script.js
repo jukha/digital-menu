@@ -18,9 +18,27 @@ decrementBtn.addEventListener("click", handleDecrement);
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
 
-  if (scrollPosition >= 250) {
+  if (scrollPosition >= 40) {
     document.body.classList.add("scrolled");
   } else {
     document.body.classList.remove("scrolled");
   }
+});
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+    // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
 });
