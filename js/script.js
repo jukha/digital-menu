@@ -17,28 +17,47 @@ decrementBtn.addEventListener("click", handleDecrement);
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY || window.pageYOffset;
-
-  if (scrollPosition >= 40) {
+  if (scrollPosition >= 190) {
     document.body.classList.add("scrolled");
   } else {
     document.body.classList.remove("scrolled");
   }
 });
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
+const swiper = new Swiper(".food-item .swiper", {
   direction: "horizontal",
-    // loop: true,
-
-  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".food-item .swiper-pagination",
   },
 
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".food-item .swiper-button-next",
+    prevEl: ".food-item .swiper-button-prev",
   },
+});
 
+const swiper1 = new Swiper(".swiper1", {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  breakpoints: {
+    480: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 6,
+    },
+    1110: {
+      slidesPerView: 7,
+    },
+  },
+  pagination: ".swiper-pagination1",
+  paginationClickable: true,
+
+  navigation: {
+    nextEl: ".swiper1-btn-next",
+    prevEl: ".swiper1-btn-prev",
+  },
 });

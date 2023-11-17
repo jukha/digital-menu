@@ -13,12 +13,12 @@
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -36,8 +36,6 @@
           <p>Tag Line</p>
         </div>
       </div>
-    </section>
-    <section class="categories-wrapper px-2">
       <div class="narrowed text-white">
         <h2 class="text-uppercase">Restaurant Name</h2>
         <p>
@@ -46,106 +44,134 @@
           <span>Table #3</span>
         </p>
       </div>
+    </section>
+    <section class="categories-wrapper px-2 container">
       <div class="scrollable-tabs-container">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#home-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="home-tab-pane"
-              aria-selected="true"
-            >
-              Breakfast
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#profile-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="profile-tab-pane"
-              aria-selected="false"
-            >
-              Lunch
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="contact-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#contact-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="contact-tab-pane"
-              aria-selected="false"
-            >
-              Dinner
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="disabled-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#disabled-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="disabled-tab-pane"
-              aria-selected="false"
-            >
-              Dessert
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="appetizer-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#appetizer-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="appetizer-tab-pane"
-              aria-selected="false"
-            >
-              Appetizer
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="beverage-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#beverage-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="beverage-tab-pane"
-              aria-selected="false"
-            >
-              Beverage
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="snack-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#snack-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="snack-tab-pane"
-              aria-selected="false"
-            >
-              Snack
-            </button>
-          </li>
+          <div class="swiper-button-prev swiper1-btn-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                  >
+                    Breakfast
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false"
+                  >
+                    Lunch
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-tab-pane"
+                    aria-selected="false"
+                  >
+                    Dinner
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="disabled-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#disabled-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="disabled-tab-pane"
+                    aria-selected="false"
+                  >
+                    Dessert
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="appetizer-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#appetizer-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="appetizer-tab-pane"
+                    aria-selected="false"
+                  >
+                    Appetizer
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="beverage-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#beverage-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="beverage-tab-pane"
+                    aria-selected="false"
+                  >
+                    Beverage
+                  </button>
+                </li>
+              </div>
+              <div class="swiper-slide">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="snack-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#snack-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="snack-tab-pane"
+                    aria-selected="false"
+                  >
+                    Snack
+                  </button>
+                </li>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination swiper-pagination1"></div> -->
+          </div>
+          <div class="swiper-button-next swiper1-btn-next">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
         </ul>
       </div>
     </section>
@@ -1026,231 +1052,88 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header p-2 border-0">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="food-detail">
-              <!-- Slider main container -->
-              <div class="food-item">
-                <div class="swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <div class="food-item">
-                        <img src="img/item.png" class="food-item-img" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="food-item">
-                        <img src="img/item.png" class="food-item-img" />
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="food-item">
-                        <img src="img/item.png" class="food-item-img" />
-                      </div>
-                    </div>
-                    ...
-                  </div>
-                  <div class="swiper-pagination"></div>
+          <div class="modal-content-inner">
+            <div class="modal-header pt-3 pe-3 p-0 border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="food-detail">
+                <!-- Slider main container -->
+                <div class="food-item">
                   <div class="swiper-button-prev"></div>
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="food-item">
+                          <img src="img/item.png" class="food-item-img" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-item">
+                          <img src="img/item.png" class="food-item-img" />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="food-item">
+                          <img src="img/item.png" class="food-item-img" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
                   <div class="swiper-button-next"></div>
+                  <span class="price">Php 250.00</span>
                 </div>
-                <span class="price">Php 250.00</span>
-              </div>
 
-              <h3>Salmon with gravy and sides</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="options">
-              <h4>Options</h4>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
+                <h3 class="mt-3 fw-semibold">Salmon with gravy and sides</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
-              </div>
-              <div class="d-flex align-content-center gap-2">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Default checkbox
-                </label>
-                <span class="ms-auto">+43.55</span>
+              <div class="options">
+                <h4 class="mb-3">Options</h4>
+                <div class="d-flex align-content-center gap-2 mb-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                  <span class="ms-auto">+43.55</span>
+                </div>
+                <div class="d-flex align-content-center gap-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault1"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault1">
+                    Default checkbox
+                  </label>
+                  <span class="ms-auto">+43.55</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="modal-footer align-items-stretch border-0">
-            <div class="item-counter">
-              <button class="decrement-btn">-</button>
-              <span class="item-quantity">1</span>
-              <button class="increment-btn">+</button>
+            <div class="modal-footer align-items-stretch border-0">
+              <div class="item-counter">
+                <button class="decrement-btn">-</button>
+                <span class="item-quantity">1</span>
+                <button class="increment-btn">+</button>
+              </div>
+              <button class="add-product-btn">
+                Add
+                <span>$25.98</span>
+              </button>
             </div>
-            <button class="add-product-btn">
-              Add
-              <span>$25.98</span>
-            </button>
           </div>
         </div>
       </div>
@@ -1269,114 +1152,116 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1
-              class="modal-title text-uppercase fs-5"
-              id="viewOrderModalLabel"
-            >
-              Order
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <ul class="order-list pe-3">
-              <li class="order-list-item">
-                <div class="list-img">
-                  <img src="img/item.png" class="img-fluid" />
-                </div>
-                <span class="quantity">1x</span>
-                <div>
-                  <h3>Salmon with gravy and sides</h3>
-                  <p>
-                    <span> Extra sauce </span>
-                    <span>extra meat</span>
-                  </p>
-                </div>
-                <h2>43.50</h2>
-              </li>
-              <li class="order-list-item">
-                <div class="list-img">
-                  <img src="img/item.png" class="img-fluid" />
-                </div>
-                <span class="quantity">1x</span>
-                <div>
-                  <h3>Salmon with gravy and sides</h3>
-                  <p>
-                    <span> Extra sauce </span>
-                    <span>extra meat</span>
-                  </p>
-                </div>
-                <h2>43.50</h2>
-              </li>
-              <li class="order-list-item">
-                <div class="list-img">
-                  <img src="img/item.png" class="img-fluid" />
-                </div>
-                <span class="quantity">1x</span>
-                <div>
-                  <h3>Salmon with gravy and sides</h3>
-                  <p>
-                    <span> Extra sauce </span>
-                    <span>extra meat</span>
-                  </p>
-                </div>
-                <h2>43.50</h2>
-              </li>
-              <li class="order-list-item">
-                <div class="list-img">
-                  <img src="img/item.png" class="img-fluid" />
-                </div>
-                <span class="quantity">1x</span>
-                <div>
-                  <h3>Salmon with gravy and sides</h3>
-                  <p>
-                    <span> Extra sauce </span>
-                    <span>extra meat</span>
-                  </p>
-                </div>
-                <h2>43.50</h2>
-              </li>
-              <li class="order-list-item">
-                <div class="list-img">
-                  <img src="img/item.png" class="img-fluid" />
-                </div>
-                <span class="quantity">1x</span>
-                <div>
-                  <h3>Salmon with gravy and sides</h3>
-                  <p>
-                    <span> Extra sauce </span>
-                    <span>extra meat</span>
-                  </p>
-                </div>
-                <h2>43.50</h2>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center justify-content-between">
-              <h6>TOTAL</h6>
-              <h4>43.95</h4>
+          <div class="modal-content-inner">
+            <div class="modal-header">
+              <h1
+                class="modal-title text-uppercase fs-5"
+                id="viewOrderModalLabel"
+              >
+                Order
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <p>Order will be charged to MOJO @ Table # 3</p>
-            <div>
-              <h6>Order Notes</h6>
-              <textarea
-                class="form-control w-100"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
+            <div class="modal-body">
+              <ul class="order-list pe-3">
+                <li class="order-list-item">
+                  <div class="list-img">
+                    <img src="img/item.png" class="img-fluid" />
+                  </div>
+                  <span class="quantity">1x</span>
+                  <div>
+                    <h3>Salmon with gravy and sides</h3>
+                    <p>
+                      <span> Extra sauce </span>
+                      <span>extra meat</span>
+                    </p>
+                  </div>
+                  <h2>43.50</h2>
+                </li>
+                <li class="order-list-item">
+                  <div class="list-img">
+                    <img src="img/item.png" class="img-fluid" />
+                  </div>
+                  <span class="quantity">1x</span>
+                  <div>
+                    <h3>Salmon with gravy and sides</h3>
+                    <p>
+                      <span> Extra sauce </span>
+                      <span>extra meat</span>
+                    </p>
+                  </div>
+                  <h2>43.50</h2>
+                </li>
+                <li class="order-list-item">
+                  <div class="list-img">
+                    <img src="img/item.png" class="img-fluid" />
+                  </div>
+                  <span class="quantity">1x</span>
+                  <div>
+                    <h3>Salmon with gravy and sides</h3>
+                    <p>
+                      <span> Extra sauce </span>
+                      <span>extra meat</span>
+                    </p>
+                  </div>
+                  <h2>43.50</h2>
+                </li>
+                <li class="order-list-item">
+                  <div class="list-img">
+                    <img src="img/item.png" class="img-fluid" />
+                  </div>
+                  <span class="quantity">1x</span>
+                  <div>
+                    <h3>Salmon with gravy and sides</h3>
+                    <p>
+                      <span> Extra sauce </span>
+                      <span>extra meat</span>
+                    </p>
+                  </div>
+                  <h2>43.50</h2>
+                </li>
+                <li class="order-list-item">
+                  <div class="list-img">
+                    <img src="img/item.png" class="img-fluid" />
+                  </div>
+                  <span class="quantity">1x</span>
+                  <div>
+                    <h3>Salmon with gravy and sides</h3>
+                    <p>
+                      <span> Extra sauce </span>
+                      <span>extra meat</span>
+                    </p>
+                  </div>
+                  <h2>43.50</h2>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center justify-content-between">
+                <h6>TOTAL</h6>
+                <h4>43.95</h4>
+              </div>
+              <p>Order will be charged to MOJO @ Table # 3</p>
+              <div>
+                <h6>Order Notes</h6>
+                <textarea
+                  class="form-control w-100"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="modal-footer align-items-stretch border-0">
-            <button
-              class="add-product-btn text-uppercase w-75 justify-content-between"
-            >
-              Checkout
-              <span>$25.98</span>
-            </button>
+            <div class="modal-footer align-items-stretch border-0">
+              <button
+                class="add-product-btn text-uppercase w-75 justify-content-between"
+              >
+                Checkout
+                <span>$25.98</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
